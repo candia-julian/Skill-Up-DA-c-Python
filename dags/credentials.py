@@ -1,0 +1,5 @@
+database="training"
+user="alkymer"
+password="Alkemy22"
+host="training-main.cghe7e6sfljt.us-east-1.rds.amazonaws.com"
+port="5432"
