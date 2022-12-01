@@ -13,8 +13,6 @@ from airflow.operators.python import PythonOperator
 #operator para subir archivos a s3
 from airflow.providers.amazon.aws.transfers import LocalFilesystemToS3Operator
 
-
-
 with DAG(
     'dag universidad latam y jfk',
     description='ETL',
