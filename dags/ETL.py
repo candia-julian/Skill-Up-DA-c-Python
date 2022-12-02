@@ -14,7 +14,7 @@ def extract(sql:str)->pd.DataFrame:
     host=host,
     port=port
     )
-    query = open('cine2.sql', 'r')
+    query = open(sql, 'r')
 
     data = pd.read_sql(query.read(),con=engine)
     return data
@@ -34,7 +34,7 @@ def transform_cine(data:pd.DataFrame) -> None:
 
     data.universities = (data.universities
                                 .str.lstrip('-') #sacamos guiones al inicio
-                                .str.rstrip('-')  #
+                                .str.rstrip('-')  #sacamos guiones al final
                                 .str.replace('-', ' '))
 
     data = data.query('universities == "universidad del cine"')

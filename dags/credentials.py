@@ -1,5 +1,6 @@
-database="training"
-user="alkymer"
-password="Alkemy22"
-host="training-main.cghe7e6sfljt.us-east-1.rds.amazonaws.com"
-port="5432"
+database=""
+user=""
+password=""
+host=""
+port=""
+#credenciales para conectarse a la db de alkemy
